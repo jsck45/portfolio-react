@@ -13,6 +13,8 @@ const Portfolio = () => {
 
   return (
     <div className="container">
+        <h1>Portfolio</h1>
+        <hr />
       <div className="row">
         {projectsData.map((project) => (
           <div key={project.id} className="col-lg-6">

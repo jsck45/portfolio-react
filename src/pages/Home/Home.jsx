@@ -1,19 +1,18 @@
 import React from "react";
 import Header from "../../components/Header/Header";
-import Footer from "../../components/Footer/Footer";
-import Navigation from "../../components/Navigation/Navigation"; 
+import Contact from "../../pages/Contact/Contact"; 
 import Portfolio from "../../pages/Portfolio/Portfolio"; 
 
 const Home = () => {
 
   return (
 <>
-      <Navigation />
       <Header />
 
      <Portfolio />
 
-      <Footer />
+     <Contact />
+
     </>
   );
 };
