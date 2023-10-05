@@ -14,8 +14,9 @@ const Portfolio = () => {
 
   return (
     <div id="portfolio-container">
+        <br/>
         <div className="content" > 
-        <h2 className="my-5 text-start">Work</h2>
+        <h2 className="mb-5 text-start">Work</h2>
         <hr />
         <br />
       <div className="row mt-4">

@@ -52,7 +52,7 @@ const Contact = () => {
       <div className="form-container">
       <div className="row mt-4">
         <div className="col-lg-4">
-          <h2>Get in touch</h2>
+          <h3>Let's work together</h3>
         </div>
         <div className="col-lg-8">
           <form onSubmit={handleSubmit}>

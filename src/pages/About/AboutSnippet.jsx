@@ -15,9 +15,10 @@ const AboutSnippet = () => {
         combining the precision from my dental background with a creative flair
         to craft seamless user experiences.
       </p>
+      <br />
       <div className="d-flex justify-content-end">
         <a
-          href="/path-to-your-resume.pdf" // Replace with the actual path to your resume file
+          href="/path-to-your-resume.pdf" 
           className="btn btn-primary"
           download
         >
