@@ -45,45 +45,62 @@ const Contact = () => {
 
   return (
     <div className="contact-container">
-      <h1>Contact Me</h1>
-      <form onSubmit={handleSubmit}>
-        <div className="form-group">
-          <label htmlFor="name">Name</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            value={formData.name}
-            onChange={handleInputChange}
-            required
-          />
-          {errors.name && <p className="error">{errors.name}</p>}
+        <div className="container">
+      <h1 className="mt-5 text-start">Contact Me</h1>
+      <br />
+      <hr />
+      <div className="form-container">
+      <div className="row mt-4">
+        <div className="col-lg-4">
+          <h2>Get in touch</h2>
         </div>
-        <div className="form-group">
-          <label htmlFor="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value={formData.email}
-            onChange={handleInputChange}
-            required
-          />
-          {errors.email && <p className="error">{errors.email}</p>}
+        <div className="col-lg-8">
+          <form onSubmit={handleSubmit}>
+            <div className="form-group col-md-6">
+              <input
+                type="text"
+                className="form-control mb-3"
+                placeholder="Name"
+                name="name"
+                value={formData.name}
+                onChange={handleInputChange}
+                required
+              />
+              {errors.name && <p className="text-danger">{errors.name}</p>}
+            </div>
+            <div className="form-group col-md-6">
+              <input
+                type="email"
+                className="form-control mb-3"
+                placeholder="Email"
+                name="email"
+                value={formData.email}
+                onChange={handleInputChange}
+                required
+              />
+              {errors.email && <p className="text-danger">{errors.email}</p>}
+            </div>
+            <div className="form-group col-md-6">
+              <textarea
+                className="form-control mb-3"
+                placeholder="Message"
+                name="message"
+                value={formData.message}
+                onChange={handleInputChange}
+                required
+              />
+              {errors.message && <p className="text-danger">{errors.message}</p>}
+            </div>
+            <div className="d-flex">
+              <button type="submit" className="btn btn-primary">
+                Submit
+              </button>
+            </div>
+          </form>
         </div>
-        <div className="form-group">
-          <label htmlFor="message">Message</label>
-          <textarea
-            id="message"
-            name="message"
-            value={formData.message}
-            onChange={handleInputChange}
-            required
-          />
-          {errors.message && <p className="error">{errors.message}</p>}
-        </div>
-        <button type="submit">Submit</button>
-      </form>
+      </div>
+      </div>
+      </div>
     </div>
   );
 };
