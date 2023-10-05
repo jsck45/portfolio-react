@@ -46,7 +46,7 @@ const Contact = () => {
   return (
     <div className="contact-container">
         <div className="container">
-      <h1 className="mt-5 text-start">Contact Me</h1>
+      <h2 className="mt-5 text-start">Contact</h2>
       <br />
       <hr />
       <div className="form-container">
