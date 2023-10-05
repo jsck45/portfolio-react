@@ -5,9 +5,10 @@ const AboutSnippet = () => {
   return (
     <div>
       <br />
-      <h2 className="text-start">About Me</h2>
+      <h2 className="text-start">about me</h2>
       <br />
-      <hr />
+      <hr />  
+      <br />
       <p className="snippet-text col-lg-8">
         Creative and adaptable, my unique background in dentistry and interior
         design has prepared me for a seamless transition into the dynamic world

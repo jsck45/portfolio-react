@@ -1,3 +1,8 @@
 .typewriter-container {
     font-size: 2em;
+    text-align: left;
+}
+
+.intro-title {
+    text-align: left;
 }

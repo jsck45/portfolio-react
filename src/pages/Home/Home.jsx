@@ -15,9 +15,7 @@ const Home = () => {
       <div className="about">
       <AboutSnippet />
      </div>
-      <div className="portfolio">
-     <Portfolio />
-     </div>
+           <Portfolio addMarginTop={false} />
      
      <div className="contact">
      <Contact />

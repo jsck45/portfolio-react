@@ -46,13 +46,13 @@ const Contact = () => {
   return (
     <div className="contact-container">
         <div className="container">
-      <h2 className="mt-5 text-start">Contact</h2>
+      <h2 className="mt-5 text-start">contact</h2>
       <br />
       <hr />
       <div className="form-container">
       <div className="row mt-4">
         <div className="col-lg-4">
-          <h3>Let's work together</h3>
+          <h3>say hello</h3>
         </div>
         <div className="col-lg-8">
           <form onSubmit={handleSubmit}>
