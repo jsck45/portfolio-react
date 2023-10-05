@@ -1,9 +1,8 @@
-#navbar {
+.footer {
     position: fixed;
-    top: 0;
-    left: 5rem;
+    bottom: 0;
+    left: 0;
     right: 0;
     z-index: 1000;
     background-color: white;
-    padding: 2rem 0;
   }

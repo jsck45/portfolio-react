@@ -1,5 +1,6 @@
 import React from "react";
 import Project from "../../components/Project/Project"; 
+import "./Portfolio.css";
 
 const Portfolio = () => {
   const projectsData = [
@@ -12,7 +13,8 @@ const Portfolio = () => {
   ];
 
   return (
-    <div className="container">
+    <div id="portfolio-container">
+        <div className="content">
         <h1>Portfolio</h1>
         <hr />
       <div className="row">
@@ -22,6 +24,7 @@ const Portfolio = () => {
           </div>
         ))}
       </div>
+    </div>
     </div>
   );
 };
