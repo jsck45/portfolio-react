@@ -12,11 +12,9 @@ const Home = () => {
   <div className="header">
       <Header />
       </div>
-      <div className="about">
-      <AboutSnippet />
-     </div>
+      
            <Portfolio addMarginTop={false} />
-     
+      <AboutSnippet />
      <div className="contact">
      <Contact />
      </div>

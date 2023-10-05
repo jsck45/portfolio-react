@@ -1,5 +1,5 @@
 import React from "react";
-import Project from "../../components/Project/Project"; 
+import Project from "../../components/Project/Project";
 import "./Portfolio.css";
 
 const Portfolio = ({ addMarginTop }) => {
@@ -14,20 +14,19 @@ const Portfolio = ({ addMarginTop }) => {
 
   return (
     <div className={`portfolio ${addMarginTop ? "with-margin-top" : ""}`}>
-    {/* <div> */}
-        <br/>
-        <div className="content" > 
-        <h2 className="mb-5 text-start">projects</h2>
+      <br />
+      <div className="content">
+        <h2 className="mb-5 text-start">portfolio</h2>
         <hr />
         <br />
-      <div className="row mt-4">
-        {projectsData.map((project) => (
-          <div key={project.id} className="col-lg-6 project-card">
-            <Project title={project.title} description={project.description} />
-          </div>
-        ))}
+        <div className="horizontal-scroll-container">
+          {projectsData.map((project) => (
+            <div key={project.id}>
+              <Project title={project.title} />
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
     </div>
   );
 };

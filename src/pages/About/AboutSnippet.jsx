@@ -9,12 +9,8 @@ const AboutSnippet = () => {
       <br />
       <hr />  
       <br />
-      <p className="snippet-text col-lg-8">
-        Creative and adaptable, my unique background in dentistry and interior
-        design has prepared me for a seamless transition into the dynamic world
-        of web development. I aspire to excel as a Front-End Developer,
-        combining the precision from my dental background with a creative flair
-        to craft seamless user experiences.
+      <p className="snippet-text col-lg-7">
+         Former dentist and interior designer now thriving as a front-end web developer, seamlessly blending creativity and precision to craft visually captivating and user-friendly websites. My unique background informs my approach, prioritizing aesthetics and user experience.
       </p>
       <br />
       <div className="d-flex justify-content-end">

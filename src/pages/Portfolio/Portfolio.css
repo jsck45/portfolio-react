@@ -1,11 +1,22 @@
-.portfolio-container {
-    margin: 5rem 0;
-}
 
 .with-margin-top {
     margin-top: 5rem;
   }
 
-/* .project-card {
-    
-} */
+.horizontal-scroll-container {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent wrapping of items to the next line */
+    scrollbar-width: none; /* Hide the horizontal scrollbar (optional) */
+    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS (optional) */
+  }
+  
+  .project {
+    margin-right: 20px; /* Add some space between items */
+  }
+  
+  .horizontal-scroll-container::-webkit-scrollbar {
+    display: none; /* Hide the scrollbar */
+  }
+ 
+  

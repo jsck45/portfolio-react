@@ -1,17 +1,19 @@
 import React from "react";
+import "./Project.css";
 
 const Project = ({ title, description }) => {
   return (
     <div className="project">
-      <img
-        src="https://via.placeholder.com/300x200" 
-        alt="Project Image"
+      <img className="project-image"
+  src="https://via.placeholder.com/600x400" 
+  alt="Project Image"
       />
-      <h3>{title}</h3>
-      <p>{description}</p>
+      <br />
+      {/* <h3>{title}</h3> */}
+      {/* <p>{description}</p> */}
       
       <a href="#" target="_blank" rel="noopener noreferrer">
-        View Project
+        <h3>{title}</h3>
       </a>
     </div>
   );
