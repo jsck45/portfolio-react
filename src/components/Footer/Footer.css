@@ -1,3 +1,6 @@
+/* Import Font Awesome CSS from local installation */
+@import 'font-awesome/css/font-awesome.min.css';
+
 .footer {
     position: fixed;
     bottom: 0;
@@ -6,3 +9,14 @@
     z-index: 1000;
     background-color: white;
   }
+
+  .icon {
+    font-size: 1.5em;
+    margin: 0 1rem;
+    color: black;
+    transition: color 0.3s;
+  }
+
+  .icon:hover {
+    color: blue; 
+}
