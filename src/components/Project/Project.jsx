@@ -1,20 +1,20 @@
 import React from "react";
 import "./Project.css";
 
-const Project = ({ title, description }) => {
+const Project = ({ title, description, image, link }) => {
+  
   return (
     <div className="project">
-      <img className="project-image"
-  src="https://via.placeholder.com/600x400" 
-  alt="Project Image"
-      />
-      <br />
-      {/* <h3>{title}</h3> */}
-      {/* <p>{description}</p> */}
       
-      <a href="#" target="_blank" rel="noopener noreferrer">
-        <h3>{title}</h3>
-      </a>
+      <h3>{title}</h3>
+      <br />     
+      <a href={link} target="_blank" rel="noopener noreferrer">
+      <img className="project-image"
+          src={image}
+          alt="Project Image"
+      />      </a>
+            <p>{description}</p>
+
     </div>
   );
 };

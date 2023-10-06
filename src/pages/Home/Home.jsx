@@ -13,7 +13,7 @@ const Home = () => {
       <Header />
       </div>
       
-           <Portfolio addMarginTop={false} />
+           <Portfolio />
       <AboutSnippet />
      <div className="contact">
      <Contact />

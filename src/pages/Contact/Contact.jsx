@@ -45,7 +45,6 @@ const Contact = () => {
 
   return (
     <div className="contact-container">
-        <div className="container">
       <h2 className="mt-5 text-start">contact</h2>
       <br />
       <hr />
@@ -98,7 +97,6 @@ const Contact = () => {
             </div>
           </form>
         </div>
-      </div>
       </div>
       </div>
     </div>
