@@ -15,8 +15,8 @@ const AboutSnippet = () => {
       <br />
       <div className=" download-button">
         <a
-          href="/path-to-your-resume.pdf" 
-          className="btn btn-primary"
+        href="/carol-kim-cv.pdf"
+        className="btn btn-primary"
           download
         >
           Download Resume

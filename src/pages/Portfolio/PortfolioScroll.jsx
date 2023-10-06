@@ -1,12 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 import Project from "../../components/Project/Project";
 import "./PortfolioScroll.css";
-import travelGem from "../../assets/travelgem.jpg";
-import marvel from "../../assets/marvel.jpg";
-import weatherDashboard from "../../assets/weatherdashboard.jpg";
-import codeQuiz from "../../assets/codequiz.png";
-import scheduler from "../../assets/scheduler.png";
-import jate from "../../assets/jate.jpg";
 
 const PortfolioScroll = ({ addMarginTop }) => {
   const projectsData = [
@@ -14,42 +8,42 @@ const PortfolioScroll = ({ addMarginTop }) => {
       id: 1,
       title: "travel gem explorer",
       description: "Description 1",
-      image: travelGem,
+      image: '/images/travelgem.jpg',
       link: "https://travelgem-explorer-6412c66d7631.herokuapp.com/",
     },
     {
       id: 2,
       title: "marvel character browser",
       description: "Description 2",
-      image: marvel,
+      image: '/images/marvel.jpg',
       link: "https://j-d-garwood.github.io/Marvel-Character-Browser/",
     },
     {
       id: 3,
       title: "weather dashboard",
       description: "Description 3",
-      image: weatherDashboard,
+      image: '/images/weatherdashboard.jpg',
       link: "https://jsck45.github.io/weather-dashboard/",
     },
     {
       id: 4,
       title: "coding quiz",
       description: "Description 4",
-      image: codeQuiz,
+      image: '/images/codequiz.png',
       link: "https://jsck45.github.io/codequiz/",
     },
     {
       id: 5,
       title: "work day scheduler",
       description: "Description 5",
-      image: scheduler,
+      image: '/images/scheduler.png',
       link: "https://jsck45.github.io/work-day-scheduler/",
     },
     {
       id: 6,
       title: "just another text editor",
       description: "Description 6",
-      image: jate,
+      image: '/images/jate.jpg',
       link: "https://whispering-caverns-85289-05388e280591.herokuapp.com/",
     },
   ];

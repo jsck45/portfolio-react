@@ -45,7 +45,7 @@ const Contact = () => {
 
   return (
     <div className="contact-container">
-      <h2 className="mt-5 text-start">contact</h2>
+      <h2 className="title text-start">contact</h2>
       <br />
       <hr />
       <div className="form-container">
@@ -55,7 +55,7 @@ const Contact = () => {
         </div>
         <div className="col-lg-8 form-input">
           <form onSubmit={handleSubmit}>
-            <div className="form-group col-lg-8 col-md-12">
+            <div className="form-group col-md-6">
               <input
                 type="text"
                 className="form-control mb-3"
@@ -67,7 +67,7 @@ const Contact = () => {
               />
               {errors.name && <p className="text-danger">{errors.name}</p>}
             </div>
-            <div className="form-group col-lg-8 col-md-12">
+            <div className="form-group col-md-6">
               <input
                 type="email"
                 className="form-control mb-3"
@@ -79,7 +79,7 @@ const Contact = () => {
               />
               {errors.email && <p className="text-danger">{errors.email}</p>}
             </div>
-            <div className="form-group col-lg-8 col-md-12">
+            <div className="form-group col-md-6">
               <textarea
                 className="form-control mb-3"
                 placeholder="Message"

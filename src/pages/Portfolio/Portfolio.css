@@ -10,14 +10,17 @@
     transform:scale(1.02);
   }
 
-  .image {
+  #image {
     width: 100%; 
     height: auto; 
-    max-height: 300px; 
     border-radius: 5px;
   }
  
   .portfolio {
     padding: 0 7rem;
     margin-top: 8.3rem;
+  }
+
+  .title-spacing {
+    margin-top: 1rem;
   }

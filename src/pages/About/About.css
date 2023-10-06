@@ -59,12 +59,12 @@
     padding: 0;
   }
     .about-container {
-      padding: 0;
+      padding: 0 2rem 0 2rem;
       font-size: 0.6em;
       justify-content: center;
 }
 .snippet-text {
-  padding: 0;
+  padding: 0 2rem;
   text-align: start;
   text-align: justify;
 }
@@ -75,7 +75,7 @@
       transform: scale(0.7);
     }
     .about-container {
-      padding: 0;
+      padding: 0 2rem 0 2rem;
       font-size: 0.6em;
       justify-content: center;
 }

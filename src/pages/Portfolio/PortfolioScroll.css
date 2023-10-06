@@ -46,7 +46,7 @@
     margin: 0;
   }
   .heading {
-    padding: 0;
+    padding: 2rem 2rem 0 2rem ;
   }
   .scroll {
     margin-bottom: 0;
@@ -61,6 +61,9 @@
   /* Further adjust the max-height for very small screens */
   .project-image {
     max-height: 200px; /* Adjust this value as needed */
+  }
+  .heading {
+    padding: 0 2rem 0 2rem ;
   }
 }
 

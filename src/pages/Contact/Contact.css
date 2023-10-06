@@ -6,22 +6,35 @@
     margin: 0 7rem;
 }
 
+.title {
+    margin-top: 3rem
+}
+
 
   
 
 @media (max-width: 768px) {
     .contact-container {
         margin: 0;
+
     }
     .form-container {
         margin: 0;
+        padding: 0;
     }
     .form-control {
         font-size: 0.8em!important; 
         margin-top:1rem;   }
     .form-input {
         justify-content: center;
-        display:inline-flex;
+        /* display:inline-flex; */
+    }
+    .title {
+        margin-top: 0rem;
+    }
+    .contact {
+        margin: 0 2rem;
+        padding-top: 3rem;
     }
 }
 
@@ -33,7 +46,9 @@
         margin: 0;
     }
     .contact {
-        margin: 0 0 4rem 0!important ;
+        margin: 0 2rem 4rem 2rem!important ;
+        
+        
     }
     .form-control {
 font-size: 0.8em!important; 
