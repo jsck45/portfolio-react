@@ -6,3 +6,41 @@
 .intro-title {
     text-align: left;
 }
+
+.header {
+    padding: 0.3rem 6rem 0 6rem;
+}
+
+@media (max-width: 768px) {
+    .intro-section {
+font-size: 0.8em;   
+margin-top: 2rem; }
+  }
+
+  .typewriter-container {
+font-size: 1.5em;
+}
+
+  .header {
+    padding: 0.3rem 4rem 0 4rem;
+}
+  
+  @media (max-width: 576px) {
+
+    .intro-section {
+font-size: 0.5em;
+margin-top: 2rem;
+}
+
+.intro-title{
+    text-align: center;
+}
+.typewriter-container {
+    text-align: center;
+}
+
+.header {
+    padding: 0.3rem 2rem 0 2rem;
+    margin: 0!important;
+}
+  }

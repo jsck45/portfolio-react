@@ -14,10 +14,12 @@ const Home = () => {
       </div>
       
            <PortfolioScroll />
+           <div className="gradient-background">
       <AboutSnippet />
-     <div className="contact">
+     <div className="contact ">
      <Contact />
      </div>
+    </div>
     </div>
   );
 };

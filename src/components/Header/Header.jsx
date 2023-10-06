@@ -1,7 +1,7 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
 import "./Header.css";
-import headerImage from "../../assets/header-image2.png"; // Import your image file
+import headerImage from "../../assets/header-image2.png"; 
 
 const Header = () => {
   return (
@@ -10,9 +10,9 @@ const Header = () => {
         <div className="row align-items-center">
           <div className="col-md-6">
             <img
-              src={headerImage} // Use the imported image
+              src={headerImage} 
               alt="Image"
-              className="img-fluid" // Make the image responsive
+              className="img-fluid" 
             />
           </div>
           <div className="col-md-6">

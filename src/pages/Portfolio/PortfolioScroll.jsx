@@ -57,7 +57,7 @@ const PortfolioScroll = ({ addMarginTop }) => {
   const horizontalScrollContainerRef = useRef(null);
   const [isAutoScrolling, setIsAutoScrolling] = useState(true);
   let autoScrollTimer;
-  const autoScrollInterval = 30; // Set a fixed interval for auto-scrolling
+  const autoScrollInterval = 30; 
   const scrollSpeed = 2;
 
   useEffect(() => {
@@ -86,10 +86,10 @@ const PortfolioScroll = ({ addMarginTop }) => {
         const container = horizontalScrollContainerRef.current;
         container.scrollLeft += scrollSpeed;
         if (container.scrollLeft >= container.scrollWidth - container.clientWidth) {
-          container.scrollLeft = 0; // Loop back to the beginning
+          container.scrollLeft = 0; 
         }
       }
-    }, autoScrollInterval); // Use the autoScrollInterval
+    }, autoScrollInterval); 
   };
 
   const resetAutoScrollTimer = () => {
@@ -108,10 +108,13 @@ const PortfolioScroll = ({ addMarginTop }) => {
   };
 
   return (
-    <div className={`portfolio ${addMarginTop ? "with-margin-top" : ""}`}>
+    <div className={` ${addMarginTop ? "with-margin-top" : ""}`}>
       <div className="content">
-        <h2 className="mb-5 text-start">portfolio</h2>
-        <hr />
+        <div className="heading">
+        <h2 className="text-start">projects</h2>
+        <br/>
+        <hr className="scroll"/>
+        </div>
 
         <div
           className="horizontal-scroll-container"
@@ -122,7 +125,7 @@ const PortfolioScroll = ({ addMarginTop }) => {
           {projectsData.map((project) => (
             <div className="horizontal-render-container" key={project.id}>
               <div className="project-card">
-                <Project image={project.image} link={project.link} />
+                <Project image={project.image} link={project.link} className="project-image" />
               </div>
             </div>
           ))}

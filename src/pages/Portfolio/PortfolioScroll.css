@@ -20,7 +20,50 @@
     display: none; 
   }
 
-  
+    .project-image:hover {
+    transform: scale(1.02);
+  }
+
+  .heading {
+    padding: 0 7rem 0;
+  }
+
+.project-image {
+  border-radius: 10px;
+  transition: transform 0.2s ease-in-out;
+  max-height: 400px; 
+  width: auto;
+}
+
+.scroll {
+  margin-bottom: 3rem;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .project-image {
+    max-height: 300px; 
+    margin: 0;
+  }
+  .heading {
+    padding: 0;
+  }
+  .scroll {
+    margin-bottom: 0;
+  }
+  .content {
+    margin-bottom: 0!important;
+  }
+}
+
+/* Media query for even smaller screens */
+@media (max-width: 576px) {
+  /* Further adjust the max-height for very small screens */
+  .project-image {
+    max-height: 200px; /* Adjust this value as needed */
+  }
+}
+
 
  
   

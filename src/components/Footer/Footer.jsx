@@ -3,7 +3,7 @@ import "./Footer.css";
 
 const Footer = () => {
   return (
-    <div className="footer menu_footer d-flex flex-column flex-md-row justify-content-md-center align-items-md-center w-100 p-3">
+    <div className="footer menu_footer d-flex flex-column flex-md-row justify-content-md-center align-items-center w-100 p-3">
       <div className="d-flex">
         <a
           href="https://linkedin.com/in/carol-js-kim"

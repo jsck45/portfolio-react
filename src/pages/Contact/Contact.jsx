@@ -53,9 +53,9 @@ const Contact = () => {
         <div className="col-lg-4">
           <h3>say hello</h3>
         </div>
-        <div className="col-lg-8">
+        <div className="col-lg-8 form-input">
           <form onSubmit={handleSubmit}>
-            <div className="form-group col-md-6">
+            <div className="form-group col-lg-8 col-md-12">
               <input
                 type="text"
                 className="form-control mb-3"
@@ -67,7 +67,7 @@ const Contact = () => {
               />
               {errors.name && <p className="text-danger">{errors.name}</p>}
             </div>
-            <div className="form-group col-md-6">
+            <div className="form-group col-lg-8 col-md-12">
               <input
                 type="email"
                 className="form-control mb-3"
@@ -79,7 +79,7 @@ const Contact = () => {
               />
               {errors.email && <p className="text-danger">{errors.email}</p>}
             </div>
-            <div className="form-group col-md-6">
+            <div className="form-group col-lg-8 col-md-12">
               <textarea
                 className="form-control mb-3"
                 placeholder="Message"
@@ -90,7 +90,7 @@ const Contact = () => {
               />
               {errors.message && <p className="text-danger">{errors.message}</p>}
             </div>
-            <div className="d-flex">
+            <div className={`d-flex justify-content-center justify-content-lg-start justify-content-md-start`}>
               <button type="submit" className="btn btn-primary">
                 Submit
               </button>

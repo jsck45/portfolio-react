@@ -2,5 +2,42 @@
     margin: 5rem 0;
 }
 
+.contact-container {
+    margin: 0 7rem;
+}
+
+
+  
+
+@media (max-width: 768px) {
+    .contact-container {
+        margin: 0;
+    }
+    .form-container {
+        margin: 0;
+    }
+    .form-control {
+        font-size: 0.8em!important; 
+        margin-top:1rem;   }
+    .form-input {
+        justify-content: center;
+        display:inline-flex;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact-container {
+        margin: 0;
+    }
+    .form-container {
+        margin: 0;
+    }
+    .contact {
+        margin: 0 0 4rem 0!important ;
+    }
+    .form-control {
+font-size: 0.8em!important; 
+margin-top:1rem;   }
+   }
 
 
