@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import Project from "../../components/Project/Project";
 import "./Portfolio.css";
 import travelGem from "../../assets/travelgem.jpg";
@@ -9,13 +9,12 @@ import scheduler from "../../assets/scheduler.png";
 import jate from "../../assets/jate.jpg";
 
 const Portfolio = ({ addMarginTop }) => {
-  
   const projectsData = [
     {
       id: 1,
       title: "travel gem explorer",
       description: "Description 1",
-      image: travelGem, 
+      image: travelGem,
       link: "https://travelgem-explorer-6412c66d7631.herokuapp.com/",
     },
     {
@@ -56,35 +55,74 @@ const Portfolio = ({ addMarginTop }) => {
   ];
 
   const horizontalScrollContainerRef = useRef(null);
+  const [isAutoScrolling, setIsAutoScrolling] = useState(true);
+  let autoScrollTimer;
+  const autoScrollInterval = 30; // Set a fixed interval for auto-scrolling
+  const scrollSpeed = 2;
 
   useEffect(() => {
     const container = horizontalScrollContainerRef.current;
 
     const handleScroll = () => {
-      container.style.animation = "none"; 
+      if (!isAutoScrolling) {
+        setIsAutoScrolling(true);
+        resetAutoScrollTimer();
+      }
     };
 
     container.addEventListener("scroll", handleScroll);
 
+    startAutoScroll();
+
     return () => {
       container.removeEventListener("scroll", handleScroll);
+      clearInterval(autoScrollTimer);
     };
-  }, []);
+  }, [isAutoScrolling]);
+
+  const startAutoScroll = () => {
+    autoScrollTimer = setInterval(() => {
+      if (horizontalScrollContainerRef.current && isAutoScrolling) {
+        const container = horizontalScrollContainerRef.current;
+        container.scrollLeft += scrollSpeed;
+        if (container.scrollLeft >= container.scrollWidth - container.clientWidth) {
+          container.scrollLeft = 0; // Loop back to the beginning
+        }
+      }
+    }, autoScrollInterval); // Use the autoScrollInterval
+  };
+
+  const resetAutoScrollTimer = () => {
+    clearInterval(autoScrollTimer);
+    startAutoScroll();
+  };
+
+  const handleMouseEnter = () => {
+    setIsAutoScrolling(false);
+    clearInterval(autoScrollTimer);
+  };
+
+  const handleMouseLeave = () => {
+    setIsAutoScrolling(true);
+    resetAutoScrollTimer();
+  };
 
   return (
     <div className={`portfolio ${addMarginTop ? "with-margin-top" : ""}`}>
       <div className="content">
         <h2 className="mb-5 text-start">portfolio</h2>
         <hr />
-       
+
         <div
           className="horizontal-scroll-container"
           ref={horizontalScrollContainerRef}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
         >
           {projectsData.map((project) => (
             <div className="horizontal-render-container" key={project.id}>
               <div className="project-card">
-                <Project image={project.image} link={project.link}/>
+                <Project image={project.image} link={project.link} />
               </div>
             </div>
           ))}
