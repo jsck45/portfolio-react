@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../../components/Header/Header";
 import Contact from "../../pages/Contact/Contact"; 
-import Portfolio from "../../pages/Portfolio/Portfolio"; 
+import PortfolioScroll from "../Portfolio/PortfolioScroll"; 
 import AboutSnippet from "../../pages/About/AboutSnippet"
 import "./Home.css"
 
@@ -13,7 +13,7 @@ const Home = () => {
       <Header />
       </div>
       
-           <Portfolio />
+           <PortfolioScroll />
       <AboutSnippet />
      <div className="contact">
      <Contact />

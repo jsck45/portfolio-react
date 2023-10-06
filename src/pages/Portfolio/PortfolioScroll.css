@@ -1,0 +1,26 @@
+
+.with-margin-top {
+    margin-top: 5rem;
+  }
+
+.horizontal-scroll-container {
+    display: flex;
+    overflow-x: auto; 
+    white-space: nowrap; 
+    scrollbar-width: none; 
+    width: 100%; 
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .project {
+    margin-right: 20px; 
+  }
+  
+  .horizontal-scroll-container::-webkit-scrollbar {
+    display: none; 
+  }
+
+  
+
+ 
+  

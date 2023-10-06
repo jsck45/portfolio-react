@@ -1,24 +1,19 @@
 
-.with-margin-top {
-    margin-top: 5rem;
+  .card {
+    margin: 1rem;
+    border:1px solid #ccc;
+    border-radius:10px;
+    transition: transform 0.2s ease-in-out;
+    }
+
+  .card:hover {
+    transform:scale(1.02);
   }
 
-.horizontal-scroll-container {
-    display: flex;
-    overflow-x: auto; 
-    white-space: nowrap; 
-    scrollbar-width: none; 
+  .image {
     width: 100%; 
-    -webkit-overflow-scrolling: touch;
+    height: auto; 
+    max-height: 300px; 
+    border-radius: 5px;
   }
-  
-  .project {
-    margin-right: 20px; 
-  }
-  
-  .horizontal-scroll-container::-webkit-scrollbar {
-    display: none; 
-  }
-
  
-  
