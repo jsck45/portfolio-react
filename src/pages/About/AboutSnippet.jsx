@@ -9,11 +9,11 @@ const AboutSnippet = () => {
       <br />
       <hr />  
       <br />
-      <p className="snippet-text col-lg-7">
-         Former dentist and interior designer now thriving as a front-end web developer, seamlessly blending creativity and precision to craft visually captivating and user-friendly websites. My unique background informs my approach, prioritizing aesthetics and user experience.
-      </p>
+      <p className="snippet-text col-lg-6">
+         Former dentist and interior designer now thriving as a front-end web developer, seamlessly blending creativity and precision to create visually captivating and user-friendly websites. My unique background informs my approach, prioritizing aesthetics and user experience.
       <br />
-      <div className=" download-button">
+      <br/>
+      <div className="download-button">
         <a
         href="/carol-kim-cv.pdf"
         className="btn btn-primary"
@@ -22,6 +22,8 @@ const AboutSnippet = () => {
           Download Resume
         </a>
       </div>
+      </p>
+
     </div>
   );
 };
