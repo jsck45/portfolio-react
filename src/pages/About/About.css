@@ -103,9 +103,13 @@
   }
 
   .resume-button{
-    /* justify-content: center; */
-    padding: 0;
+    padding: 0.5rem;
     display: flex;
+    justify-content: center;
+    color:black;
+ background-color: peachpuff;
+ font-size: 0.6em;
+
   }
 
 .download-button {

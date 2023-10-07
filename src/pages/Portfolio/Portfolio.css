@@ -55,3 +55,17 @@ opacity:0.8;
 .title-spacing:hover {
   transform: scale(1.05);
 }
+
+@media (max-width: 768px) {
+
+.content{
+  margin: 9rem 0;
+}
+}
+
+@media (max-width: 576px) {
+  .portfolio{
+    margin: 0 2rem;
+    padding: 0;
+  }
+}

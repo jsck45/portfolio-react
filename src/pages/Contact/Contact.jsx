@@ -34,20 +34,17 @@ const Contact = () => {
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
-    // Clear the error message when the user starts typing in the field
     clearError(name);
   };
 
   const handleBlur = (e) => {
     const { name, value } = e.target;
-    // Check if the field is empty when the user moves out of it
     if (!value.trim()) {
       setErrors({ ...errors, [name]: `${name} is required` });
     }
   };
 
   const clearError = (name) => {
-    // Clear the error message for the specified field
     setErrors({ ...errors, [name]: "" });
   };
 
@@ -138,7 +135,7 @@ const Contact = () => {
               </div>
               <br />
               <div className={`d-flex justify-content-center justify-content-lg-start justify-content-md-start`}>
-                <button type="submit" className="btn btn-primary">
+                <button type="submit" className="submit-button">
                   Submit
                 </button>
               </div>

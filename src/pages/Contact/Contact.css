@@ -4,11 +4,22 @@
 
 .contact-container {
     margin: 0 7rem;
-}
+    }
 
 .title {
     margin-top: 1.3rem
 }
+
+.submit-button {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    color:black;
+ background-color: rgb(226, 193, 164);
+ font-size: 1em;
+ transition: transform 0.2s ease-in-out;
+}
+
 
 .modal-content {
     display: flex;
@@ -23,10 +34,10 @@
     top: -5px;
     right: 2px;
     cursor: pointer;
-    width: 30px; /* Increase the width */
-    height: 30px; /* Increase the height */
+    width: 30px; 
+    height: 30px;
     text-align: center;
-    line-height: 30px; /* Vertically center the content */
+    line-height: 30px;
     font-size: 20px;
     color: #333;
     background-color: transparent;
@@ -35,15 +46,14 @@
   
   @media (min-width: 768px) and (max-width: 991px) {
     .custom-col {
-      flex: 0 0 48%; /* This is just an example width */
+      flex: 0 0 48%; 
     }
   }
    
 
 @media (max-width: 768px) {
     .contact-container {
-        margin: 0 2rem;
-
+        margin: 0 7em;
     }
     .form-container {
         margin: 0;

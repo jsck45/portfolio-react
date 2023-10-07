@@ -1,27 +1,27 @@
 import React from "react";
-import "./Navigation.css"
+import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
+import "./Navigation.css"; // Import your custom CSS here
 
 const Navigation = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light" id="navbar">
-      <a className="navbar-brand" href="/">Carol.</a>
-      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span className="navbar-toggler-icon"></span>
-      </button>
-      <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul className="navbar-nav">
-          <li className="nav-item active">
-            <a className="nav-link" href="/portfolio">Portfolio</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="/about">About</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="/contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <Navbar expand="lg" id="navbar">
+      <Navbar.Brand href="/">Carol.</Navbar.Brand>
+      <Navbar.Toggle aria-controls="navbarNav" />
+      <Navbar.Collapse id="navbarNav" className="justify-content-end">
+        <Nav>
+          <Nav.Item>
+            <Nav.Link href="/portfolio">Portfolio</Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link href="/about">About</Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link href="/contact">Contact</Nav.Link>
+          </Nav.Item>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
   );
 };
 
