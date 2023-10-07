@@ -48,4 +48,4 @@ THEN I am presented with text or icon links to the developer’s GitHub and Link
 
 ## Deployed Application
 
-[Link to deployed application](https://whispering-caverns-85289-05388e280591.herokuapp.com/).
+[Link to deployed application](https://carol-kim-portfolio.netlify.app/).
