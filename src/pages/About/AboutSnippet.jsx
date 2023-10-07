@@ -13,11 +13,11 @@ const AboutSnippet = () => {
          Former dentist and interior designer now thriving as a front-end web developer, seamlessly blending creativity and precision to create visually captivating and user-friendly websites. My unique background informs my approach, prioritizing aesthetics and user experience.
       <br />
       <br/>
-      <div className="download-button">
+      <div className="resume-button">
         <a
         href="/carol-kim-cv.pdf"
         className="btn btn-primary"
-          download
+          download="ck-resume.pdf"
         >
           Download Resume
         </a>

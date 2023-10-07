@@ -7,3 +7,10 @@
     background-color: white;
     padding: 2rem 5rem;
   }
+
+  @media (max-width: 768px) {
+    #navbar {
+      padding: 2rem;
+    }
+  }
+
