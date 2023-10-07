@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Modal from "react-modal";
 import "./Contact.css";
 
@@ -100,9 +100,7 @@ const Contact = () => {
                   onBlur={handleBlur}
                   required
                 />
-                {errors.name && (
-                  <p className="text-danger">{errors.name}</p>
-                )}
+                {errors.name && <p className="text-danger">{errors.name}</p>}
               </div>
               <div className="form-group col-md-6">
                 <input
@@ -115,9 +113,7 @@ const Contact = () => {
                   onBlur={handleBlur}
                   required
                 />
-                {errors.email && (
-                  <p className="text-danger">{errors.email}</p>
-                )}
+                {errors.email && <p className="text-danger">{errors.email}</p>}
               </div>
               <div className="form-group col-md-6">
                 <textarea
@@ -134,7 +130,9 @@ const Contact = () => {
                 )}
               </div>
               <br />
-              <div className={`d-flex justify-content-center justify-content-lg-start justify-content-md-start`}>
+              <div
+                className={`d-flex justify-content-center justify-content-lg-start justify-content-md-start`}
+              >
                 <button type="submit" className="submit-button">
                   Submit
                 </button>

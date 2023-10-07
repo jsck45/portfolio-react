@@ -1,7 +1,6 @@
-import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import "./Navigation.css"; // Import your custom CSS here
+import "./Navigation.css"; 
 
 const Navigation = () => {
   return (

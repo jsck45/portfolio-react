@@ -109,7 +109,11 @@
     color:black;
  background-color: peachpuff;
  font-size: 0.6em;
+ transition: transform 0.2s ease-in-out;
+  }
 
+  .resume-button:hover{
+    transform:scale(1.05);
   }
 
 .download-button {
@@ -126,7 +130,7 @@
       transform: scale(0.8);
     }
     .resume-button{
-      transform: translateX(50%); /* Center horizontally */
+      transform: translateX(50%); 
   
     }
     .about-container {
@@ -164,8 +168,8 @@
   .download-button {
     position: absolute;
     bottom: 5rem;
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Center horizontally */
+    left: 50%; 
+    transform: translateX(-50%); 
   }
   }
   
@@ -174,7 +178,7 @@
       transform: scale(0.7);
     }
     .resume-button{
-      transform: translateX(50%); /* Center horizontally */
+      transform: translateX(50%); 
   
     }
     .resume-container {
@@ -213,7 +217,7 @@
   .download-button {
     position: absolute;
     bottom: 5rem;
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Center horizontally */
+    left: 50%; 
+    transform: translateX(-50%); 
   }
 }

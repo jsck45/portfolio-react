@@ -1,4 +1,3 @@
-import React from "react";
 import "./Footer.css";
 
 const Footer = () => {
@@ -11,7 +10,7 @@ const Footer = () => {
           rel="noopener noreferrer"
           className="mx-2"
         >
-          <i className="fa fa-linkedin icon"></i> 
+          <i className="fa fa-linkedin icon"></i>
         </a>
         <a
           href="https://github.com/jsck45"
@@ -19,7 +18,7 @@ const Footer = () => {
           rel="noopener noreferrer"
           className="mx-2"
         >
-          <i className="fa fa-github icon"></i> 
+          <i className="fa fa-github icon"></i>
         </a>
         <a
           href="https://stackoverflow.com/users/22682012/carol-kim"
@@ -27,7 +26,7 @@ const Footer = () => {
           rel="noopener noreferrer"
           className="mx-2"
         >
-          <i className="fa fa-stack-overflow icon"></i> 
+          <i className="fa fa-stack-overflow icon"></i>
         </a>
       </div>
     </div>

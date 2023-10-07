@@ -39,7 +39,6 @@
   margin-bottom: 3rem;
 }
 
-/* Media query for smaller screens */
 @media (max-width: 768px) {
   .project-image {
     max-height: 300px; 
@@ -56,11 +55,9 @@
   }
 }
 
-/* Media query for even smaller screens */
 @media (max-width: 576px) {
-  /* Further adjust the max-height for very small screens */
   .project-image {
-    max-height: 200px; /* Adjust this value as needed */
+    max-height: 200px; 
   }
   .heading {
     padding: 0 2rem 0 2rem ;
