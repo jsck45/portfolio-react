@@ -34,6 +34,21 @@ const Contact = () => {
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
+    // Clear the error message when the user starts typing in the field
+    clearError(name);
+  };
+
+  const handleBlur = (e) => {
+    const { name, value } = e.target;
+    // Check if the field is empty when the user moves out of it
+    if (!value.trim()) {
+      setErrors({ ...errors, [name]: `${name} is required` });
+    }
+  };
+
+  const clearError = (name) => {
+    // Clear the error message for the specified field
+    setErrors({ ...errors, [name]: "" });
   };
 
   const handleSubmit = (e) => {
@@ -56,7 +71,7 @@ const Contact = () => {
       console.log("Form data submitted:", formData);
       setFormData({ name: "", email: "", message: "" });
       setErrors({});
-      setIsModalOpen(true); 
+      setIsModalOpen(true);
     }
   };
 
@@ -71,75 +86,83 @@ const Contact = () => {
       <br />
       <hr />
       <div className="form-container">
-      <div className="row mt-4">
-        <div className="col-lg-4 custom-col">
-          <h3>say hello</h3>
-        </div>
-        <div className="col-lg-8 custom-col form-input">
-          <form onSubmit={handleSubmit}>
-            <div className="form-group col-md-6">
-              <input
-                type="text"
-                className="form-control mb-3"
-                placeholder="Name"
-                name="name"
-                value={formData.name}
-                onChange={handleInputChange}
-                required
-              />
-              {errors.name && <p className="text-danger">{errors.name}</p>}
-            </div>
-            <div className="form-group col-md-6">
-              <input
-                type="email"
-                className="form-control mb-3"
-                placeholder="Email"
-                name="email"
-                value={formData.email}
-                onChange={handleInputChange}
-                required
-              />
-              {errors.email && <p className="text-danger">{errors.email}</p>}
-            </div>
-            <div className="form-group col-md-6">
-              <textarea
-                className="form-control mb-3"
-                placeholder="Message"
-                name="message"
-                value={formData.message}
-                onChange={handleInputChange}
-                required
-              />
-              {errors.message && <p className="text-danger">{errors.message}</p>}
-            </div>
-            <br/>
-            <div className={`d-flex justify-content-center justify-content-lg-start justify-content-md-start`}>
-              <button type="submit" className="btn btn-primary">
-                Submit
+        <div className="row mt-4">
+          <div className="col-lg-4 custom-col">
+            <h3>say hello</h3>
+          </div>
+          <div className="col-lg-8 custom-col form-input">
+            <form onSubmit={handleSubmit}>
+              <div className="form-group col-md-6">
+                <input
+                  type="text"
+                  className="form-control mb-3"
+                  placeholder="Name"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleInputChange}
+                  onBlur={handleBlur}
+                  required
+                />
+                {errors.name && (
+                  <p className="text-danger">{errors.name}</p>
+                )}
+              </div>
+              <div className="form-group col-md-6">
+                <input
+                  type="email"
+                  className="form-control mb-3"
+                  placeholder="Email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleInputChange}
+                  onBlur={handleBlur}
+                  required
+                />
+                {errors.email && (
+                  <p className="text-danger">{errors.email}</p>
+                )}
+              </div>
+              <div className="form-group col-md-6">
+                <textarea
+                  className="form-control mb-3"
+                  placeholder="Message"
+                  name="message"
+                  value={formData.message}
+                  onChange={handleInputChange}
+                  onBlur={handleBlur}
+                  required
+                />
+                {errors.message && (
+                  <p className="text-danger">{errors.message}</p>
+                )}
+              </div>
+              <br />
+              <div className={`d-flex justify-content-center justify-content-lg-start justify-content-md-start`}>
+                <button type="submit" className="btn btn-primary">
+                  Submit
+                </button>
+              </div>
+            </form>
+            <Modal
+              isOpen={isModalOpen}
+              onRequestClose={() => setIsModalOpen(false)}
+              style={modalStyles}
+              contentLabel="Message Sent Modal"
+            >
+              <button
+                className="close-button"
+                onClick={() => setIsModalOpen(false)}
+              >
+                &times;
               </button>
-            </div>
-          </form>
-          <Modal
-  isOpen={isModalOpen}
-  onRequestClose={() => setIsModalOpen(false)}
-  style={modalStyles} 
-  contentLabel="Message Sent Modal"
->
-  <button
-    className="close-button" 
-    onClick={() => setIsModalOpen(false)}
-  >
-    &times;
-  </button>
-  <div className="modal-content">
-  <h3>Sent!</h3>
-  <br />
-  <p>Thanks for your message.</p>
-  </div>
-</Modal>
-
+              <div className="modal-content">
+                <h3>Sent!</h3>
+                <br />
+                <p>Thanks for your message.</p>
+              </div>
+            </Modal>
+          </div>
         </div>
-      </div>
       </div>
     </div>
   );
