@@ -51,6 +51,11 @@
     .custom-col {
       flex: 0 0 48%; 
     }
+    .form-control {
+        font-size: 0.8em!important; 
+        margin-top:1rem;
+        width:200%!important;
+       }    
   }
    
 
@@ -64,7 +69,8 @@
     }
     .form-control {
         font-size: 0.8em!important; 
-        margin-top:1rem;   }
+        margin-top:1rem;
+       }
     .form-input {
         justify-content: center;
     }
@@ -89,7 +95,8 @@
     }
     .form-control {
     font-size: 0.8em!important; 
-    margin-top:1rem;   }
+    margin-top:1rem;
+    }
    }
 
 
