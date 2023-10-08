@@ -106,7 +106,7 @@ const PortfolioScroll = ({ addMarginTop }) => {
 
   return (
     <div className={` ${addMarginTop ? "with-margin-top" : ""}`}>
-      <div className="content">
+      <div className="scroll-content">
         <div className="heading">
           <h2 className="text-start">projects</h2>
           <br />

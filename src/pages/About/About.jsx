@@ -77,6 +77,7 @@ const About = () => {
               Dentist — Sydney <br /> <hr />
               2015 - present <br />{" "}
             </p>
+            <br/>
             <ul>
               <li>
                 Led and managed a team in a high-pressure dental practice,
@@ -104,6 +105,7 @@ const About = () => {
               Interior Designer — Medibuilt, Sydney <br /> <hr />
               Jul 2021 - Jul 2022 <br />{" "}
             </p>
+            <br/>
             <ul>
               <li>
                 Achieved successful project management, ensuring on-time
@@ -126,13 +128,21 @@ const About = () => {
                 appeal.
               </li>
             </ul>
+            
           </div>
+          
+          
         </div>
-        <a href="/carol-kim-cv.pdf" download="ck-resume.pdf">
-          <button className="download-button">Download Resume</button>
-        </a>
+        <div className="button-section">
+     <a href="/carol-kim-cv.pdf" download="ck-resume.pdf">
+           <button className="download-button">Download Resume</button>
+         </a>
+         </div>
       </div>
+     
     </div>
+     
+
   );
 };
 
