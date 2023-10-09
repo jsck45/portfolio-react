@@ -177,9 +177,7 @@ justify-content: center;
 .skills-pair {
   display: block;
   }
-  .download-button {
-     font-size:smaller;
-  }
+  
   }
   
   @media (max-width: 576px) {
@@ -196,7 +194,7 @@ justify-content: center;
     }  
     .resume-container {
       padding: 10rem 2rem 7rem 2rem;
-      font-size: 0.6em;
+      font-size: 14px;
       justify-content: center;
       text-align: left;
 }
@@ -227,10 +225,4 @@ justify-content: center;
 .skills-pair {
   display: block;
   }
-  /* .download-button {
-    position: absolute;
-    bottom: 5rem;
-    left: 9rem; 
-    margin: 0 auto;
-  } */
 }
