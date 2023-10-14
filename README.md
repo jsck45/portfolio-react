@@ -44,6 +44,10 @@ THEN I am presented with text or icon links to the developer’s GitHub and Link
 
 ## Screenshot
 
+Javascript, Vite, React, Express.js, Node.js
+
+## Screenshot
+
 ![Screenshot of application](./src/assets/Screenshot.png)
 
 ## Deployed Application
