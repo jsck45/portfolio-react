@@ -138,6 +138,10 @@ const Contact = () => {
                 </button>
               </div>
             </form>
+            <div>
+              <br/>
+              <p>or reach me at <a href="mailto:carolkim45@gmail.com">carolkim45@gmail.com</a></p>
+            </div>
             <Modal
               isOpen={isModalOpen}
               onRequestClose={() => setIsModalOpen(false)}
