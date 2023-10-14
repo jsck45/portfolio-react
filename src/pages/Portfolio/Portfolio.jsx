@@ -8,6 +8,8 @@ const Portfolio = ({ addMarginTop }) => {
       github: "https://github.com/jsck45/travel-gem-explorer",
       image: "/images/travelgem.jpg",
       link: "https://travelgem-explorer-6412c66d7631.herokuapp.com/",
+      description: "An interactive full-stack application allowing users to explore and share travel destinations while engaging in discussions through comments.",
+      technology: "Node.js, Express, Javascript, Handlebars, MySQL, Sequelize, Passport.js."
     },
     {
       id: 2,
@@ -15,6 +17,8 @@ const Portfolio = ({ addMarginTop }) => {
       github: "https://github.com/jsck45/Marvel-Character-Browser",
       image: "/images/marvel.jpg",
       link: "https://j-d-garwood.github.io/Marvel-Character-Browser/",
+      description: "Front-end application leveraging third-party APIs, enabling users to search for Marvel characters, access their Wikipedia-sourced descriptions, and explore a catalog of featured Marvel comics.",
+      technology: "Javascript, Tailwind CSS, Wikipedi and Marvel APIs."
     },
     {
       id: 3,
@@ -22,6 +26,8 @@ const Portfolio = ({ addMarginTop }) => {
       github: "https://github.com/jsck45/weather-dashboard",
       image: "/images/weatherdashboard.jpg",
       link: "https://jsck45.github.io/weather-dashboard/",
+      description: "Weather application which customizes forecasts based on user-provided location input and retrieves real-time weather data from OpenWeatherMap API.",
+      technology: "Javascript, Bootstrap, OpenWeatherMap API."
     },
     {
       id: 4,
@@ -29,6 +35,8 @@ const Portfolio = ({ addMarginTop }) => {
       github: "https://github.com/jsck45/codequiz",
       image: "/images/codequiz.png",
       link: "https://jsck45.github.io/codequiz/",
+      description: "A timed coding quiz with multiple-choice questions, running in the browser and featuring dynamically updated HTML and CSS driven by JavaScript.",
+      technology: "HTML, CSS, Javascript.",
     },
     {
       id: 5,
@@ -36,6 +44,8 @@ const Portfolio = ({ addMarginTop }) => {
       github: "https://github.com/jsck45/work-day-scheduler",
       image: "/images/scheduler.png",
       link: "https://jsck45.github.io/work-day-scheduler/",
+      description: "A dynamic calendar app for saving daily events to localStorage with real-time HTML and CSS updates.",
+      technology: "HTML, CSS, Javascript, JQuery."
     },
     {
       id: 6,
@@ -43,6 +53,8 @@ const Portfolio = ({ addMarginTop }) => {
       github: "https://github.com/jsck45/pwa-text-editor",
       image: "/images/jate.jpg",
       link: "https://whispering-caverns-85289-05388e280591.herokuapp.com/",
+      description: "A browser-based text editor with PWA capabilities, incorporating data persistence for offline functionality.",
+      technology: "Node.js, Express, Javascript, Webpack, Babel, Workbox, IndexedDB."
     },
   ];
 
@@ -73,9 +85,11 @@ const Portfolio = ({ addMarginTop }) => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    link to github
+                    github repo
                   </a>
                 </div>
+
+                <div className="project-text"><p>{project.description}</p><p><strong>created with</strong> {project.technology}</p> </div>
               </div>
             </div>
           ))}

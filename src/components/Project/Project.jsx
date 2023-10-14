@@ -1,6 +1,6 @@
 import "./Project.css";
 
-const Project = ({ title, description, image, link }) => {
+const Project = ({ title, description, image, link, technology }) => {
   return (
     <div className="project">
       <h3>{title}</h3>
@@ -9,6 +9,7 @@ const Project = ({ title, description, image, link }) => {
         <img className="project-image" src={image} alt="Project Image" />{" "}
       </a>
       <p>{description}</p>
+      <p>{technology}</p>
     </div>
   );
 };

@@ -29,7 +29,7 @@ opacity:0.8;
   }
  
   .project-link {
-    font-size:20px;
+    font-size:15px;
     margin-bottom:0.5rem;
   }
 
@@ -37,7 +37,11 @@ opacity:0.8;
     color: rgb(9, 9, 9);
   }
 
- 
+ .project-text p{
+  font-size: 15px;
+  text-align: left;
+  padding: 0 1rem;
+ }
   
   .project-title {
     flex-grow: 1;
@@ -61,6 +65,7 @@ opacity:0.8;
 .content{
   margin: 9rem 0;
 }
+
 }
 
 @media (max-width: 576px) {
