@@ -54,7 +54,7 @@ const Portfolio = ({ addMarginTop }) => {
       image: "/images/jate.jpg",
       link: "https://whispering-caverns-85289-05388e280591.herokuapp.com/",
       description: "A browser-based text editor with PWA capabilities, incorporating data persistence for offline functionality.",
-      technology: "Node.js, Express, Javascript, Webpack, Babel, Workbox, IndexedDB."
+      technology: "Node.js, Express, Javascript, Webpack, Babel, Workbox."
     },
   ];
 
