@@ -46,6 +46,13 @@ const PortfolioScroll = ({ addMarginTop }) => {
       image: "/images/jate.jpg",
       link: "https://whispering-caverns-85289-05388e280591.herokuapp.com/",
     },
+    {
+      id: 7,
+      title: "tl-dr",
+      description: "Description 7",
+      image: "/images/tldr.png",
+      link: "https://tl-dr-00224c165de8.herokuapp.com/",
+    },
   ];
 
   const horizontalScrollContainerRef = useRef(null);
