@@ -63,6 +63,16 @@ const Portfolio = ({ addMarginTop }) => {
         "A browser-based text editor with PWA capabilities, incorporating data persistence for offline functionality.",
       technology: "Node.js, Express, JavaScript, Webpack, Babel, Workbox.",
     },
+    {
+      id: 7,
+      title: "tl-dr",
+      github: "https://github.com/jsck45/tl-dr",
+      image: "/images/tldr.png",
+      link: "https://tl-dr-00224c165de8.herokuapp.com/",
+      description: "Forum style app with OpenAI summarisation capabilities.",
+      technology: "MongoDB, Express, React, Node.js, JavaScript.",
+
+    },
   ];
 
   return (
